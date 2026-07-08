@@ -290,6 +290,11 @@ section{position:relative}
 .hero-names{font-family:"Great Vibes",cursive;font-weight:400;line-height:1;
   font-size:clamp(3.6rem,9vw,7.2rem);color:var(--forest-deep);margin:.08em 0 .14em;
   text-shadow:0 3px 34px rgba(255,255,255,.55),0 1px 2px rgba(255,255,255,.5)}
+@media(max-width:760px){
+  .hero-names{font-size:clamp(2.2rem,9vw,4rem)}
+  .hero-names .nm,.hero-names .amp{display:block}
+  .hero-names .amp{font-size:.72em;margin:.04em 0}
+}
 .hero-rule{display:flex;align-items:center;gap:18px;margin:8px 0 30px}
 .hero-rule .ln{height:1px;width:clamp(54px,9vw,96px);background:var(--bark-soft);opacity:.55}
 .hero-rule .orn{color:var(--ochre);font-size:.95rem;line-height:1;text-shadow:0 1px 12px rgba(255,255,255,.7)}
@@ -696,7 +701,7 @@ section{position:relative}
 
     <div class="hero-center">
       <span class="hero-eyebrow reveal">The Koito Celebration of</span>
-      <h1 class="hero-names reveal d1">Lynn Kandie <span class="amp">&amp;</span> Alfred Nugi</h1>
+      <h1 class="hero-names reveal d1"><span class="nm">Lynn Kandie</span> <span class="amp">&amp;</span> <span class="nm">Alfred Nugi</span></h1>
       <div class="hero-rule reveal d2"><span class="ln"></span><span class="orn-logo"><img src="img/la-icon.png" alt="Lynn &amp; Alfred emblem" /></span><span class="ln"></span></div>
       <div class="hero-date reveal d2">18 July 2026</div>
     </div>
